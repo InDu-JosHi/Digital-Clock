@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Nunito+Sans:wght@200;400&family=Titillium+Web&family=Work+Sans&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Work Sans', sans-serif;
+}
+.container, .clock, .right-top, .right-down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    height: 100vh;
+    background-color: #2e2e45;
+}
+.clock{
+    background-color: #2d2f38; 
+    color: #fff;
+    border-radius: 10px;
+    position: relative;
+    padding: 3rem 5rem;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .2)
+}
+.hr{
+    font-size: 7.5rem;
+    font-weight: 600;
+    padding: 0 10px;
+    background: -webkit-linear-gradient(90deg, blue,white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.right{
+flex-direction: column;
+position: relative;
+}
+.dot{
+    font-size: 4rem;
+    font-weight: bold;
+    color: grey;
+    margin-top:-1rem; 
+}
+.min{
+    font-size: 5.5rem;
+    font-weight: 580;
+    margin-top: -10px;
+    margin-left: 10px;
+    background: -webkit-linear-gradient(90deg, purple,white);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.right-down{
+    margin-left: 10px;
+}
+.ampm, .sec{
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-left: 1rem;
+    margin-top: -15px;
+    letter-spacing: 1px;
+}
+.ampm{
+    color: goldenrod;
+}
+.sec{
+    color: white;
+}
+
+@media (max-width:768px) {
+    .clock{
+        padding: 3rem 4rem;
+    }
+    .hr{
+        font-size: 6.5rem;
+    }
+    .min{
+        font-size: 4.5rem;
+        margin-top: -1rem;
+    }
+    .ampm, .sec{
+        font-size: 16px;
+    }
+    .ampm{
+        margin-right: 6px;
+    }
+    .dot{
+        font-size: 3rem;
+        margin: -1.5rem 0 0 .2rem;
+    }
+}
+@media (max-width:480px) {
+    .clock{
+        padding: 5rem .8rem;
+    }
+    .hr{
+        font-size: 4.6rem;
+    }
+    .min{
+        font-size: 3.5rem;
+        margin: 0 10px;
+    }
+    .dot{
+        margin-top: 0;
+    }
+    .ampm, .sec{
+        font-size: 14px;
+        margin-top: -.5rem;
+    }
+    .ampm{
+        margin-right: 8px;
+    }
+    .sec{
+        margin-left: 8px;
+    }
+
+}
